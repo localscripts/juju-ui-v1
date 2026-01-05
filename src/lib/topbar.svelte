@@ -15,22 +15,17 @@
   data-tauri-drag-region
   class="w-full bg-[#111111] flex items-center justify-between text-white pl-4 fixed py-2 rounded-5 ml-16 pr-19 border-b-[1.5px] border-[#A8E8EB]/12.5"
 >
-  <div class="flex items-center gap-4">
-    <div
-      class="flex rounded-[15px] hover:bg-white/6.25 p-2 gap-4 font-[450] items-center"
-    >
-      <img alt="lua" src="/lua.svg" class="size-7" />
-      Folder2
-      <img alt="arrowdown" src="/arrowdown.svg" class="size-3.5" />
-    </div>
-    <div
-      class="flex rounded-[15px] hover:bg-white/6.25 p-2 gap-4 font-[450] items-center"
-    >
-      <img alt="lua" src="/branch.svg" class="size-7" />
-      Folder2
-      <img alt="arrowdown" src="/arrowdown.svg" class="size-3.5" />
-    </div>
-  </div>
+
+      <div
+        class="text-[#2CB0CD] text-nowrap items-center justify-center font-semibold flex gap-4 h-[44px]"
+      >
+        Currently Attached
+        <div
+          class="size-6 flex items-center justify-center rounded-md bg-[#2CB0CD]"
+        >
+          <img alt="attached" class="size-5" src="/attached.svg" />
+        </div>
+      </div>
 
   <div class="flex items-center gap-3 justify-center">
     <button class="p-3 rounded-md py-4.5 hover:bg-white/12.5" onclick={minimize}>
