@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "juju",
+  "version": "0.0.1",
+  "identifier": "juju.you",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../build"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Juju",
+        "width": 960,
+        "minWidth": 860,
+        "height": 599,
+        "minHeight": 500,
+        "center": true,
+        "decorations": false,
+        "dragDropEnabled": true
+      }
+    ],
+    "security": {
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/juju.ico"
+    ]
+  }
+}
